@@ -1,0 +1,95 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/homepage/css/style.css">
+
+    <title>welcome</title>
+</head>
+<body>
+    <div class="hero">
+        <header class="major">
+            <div class="logo">
+             code4fun
+            </div>
+            <div class="nav_links">
+                <a href="test.html">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="menu">
+                <img src="/static/homepage/menu.svg" alt="">
+            </div>
+        </header>
+
+        <div class="hero_text">
+            <span>Let's have a great time coding together,</span>
+            <small>the more the merrier</small>
+        </div>
+
+
+        <div class="cto">
+            <button>JOIN A PROJECT</button>
+            <button>LEARN TO CODE</button>
+        </div>
+    </div>
+    <main>
+        <div class="idea">
+            <h3 class="title">
+                COLLABORATION
+            </h3>
+            <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores possimus rem perferendis quis ex asperiores.
+            </p>
+            <div class="image">
+                <img src="/static/homepage/image_1.jpeg" alt="">
+               
+            </div>
+        </div>
+
+        <div class="idea">
+            <h3 class="title">
+                TEAM WORK
+            </h3>
+            <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores possimus rem perferendis quis ex asperiores.
+            </p>
+            <div class="image">
+                <img src="/static/homepage/image_1.jpeg" alt="">
+            </div>
+        </div>
+
+        <div class="idea">
+            <h3 class="title">
+                FRIENDLY COMMUNITY
+            </h3>
+            <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores possimus rem perferendis quis ex asperiores.
+            </p>
+            <div class="image">
+                <img src="/static/homepage/image_1.jpeg" alt="">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="logo">
+            code4fun
+           </div>
+        <a href="#">Discord</a>
+        <a href="#">Telegram</a>
+    </footer>
+
+    <script>
+        const menu = document.querySelector('.menu')
+        const nav_links = document.querySelector('.nav_links')
+
+        menu.addEventListener('click',()=>{
+            nav_links.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
